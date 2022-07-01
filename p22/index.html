@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 22 pract</title>
+    <style>
+      .letters {
+        font-size: 20px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid black;
+        text-align: center;
+        background-color: aliceblue;
+        font-family: "Times New Roman", Times, serif;
+        text-transform: uppercase;
+      }
+      .sign {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        background-color: beige;
+        margin: 10px;
+        position: relative;
+      }
+      #signSec {
+        border: 1px solid black;
+        padding: 20px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #nameInput {
+        grid-column: span 2;
+        border-radius: 5px;
+        width: 90%;
+      }
+      #showCostBtn {
+        margin-top: 10px;
+        grid-column: span 2;
+        justify-self: end;
+      }
+      #title {
+        grid-column: span 2;
+        text-align: center;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .message {
+        color: red;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+      }
+      .wrong {
+        border: red 1px solid;
+      }
+      .wrong:focus-within {
+        outline: red;
+      }
+      .price {
+        margin: 0;
+        padding: 1px 3px;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+      }
+      label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="signSec">
+      <form autocomplete="off">
+        <h2 id="title">Custom Signage</h2>
+        <div style="display: flex; align-items: center; margin-bottom: 10px">
+          <label for="nameInput" id="label">Enter Name:</label>
+        </div>
+        <input type="text" id="nameInput" />
+        <button id="showCostBtn">Show Cost</button>
+      </form>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+</html>
